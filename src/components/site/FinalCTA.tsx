@@ -1,12 +1,12 @@
 import { MessageCircle } from "lucide-react";
-import ctaImg from "@/assets/cta.jpg";
+import ctaImg from "@/assets/villages-house.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 export function FinalCTA() {
   const ref = useReveal<HTMLElement>();
   return (
     <section ref={ref} className="relative min-h-[70vh] overflow-hidden">
-      <img src={ctaImg} alt="Interior sofisticado com vista para a natureza" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+      <img src={ctaImg.url} alt="Casa no Villages Piranhas ao entardecer" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-forest-deep via-forest-deep/70 to-forest-deep/30" />
       <div className="relative mx-auto flex min-h-[70vh] max-w-5xl flex-col items-center justify-center px-6 py-24 text-center text-offwhite">
         <div data-reveal className="mb-8 flex items-center gap-4">
