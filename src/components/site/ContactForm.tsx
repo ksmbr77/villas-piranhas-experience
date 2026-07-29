@@ -23,7 +23,7 @@ const schema = z.object({
 });
 
 const WHATSAPP = "5579981144487";
-const WHATSAPP_DISPLAY = "+55 79 98114-4487";
+const WHATSAPP_DISPLAY = "+55 79 9811-4487";
 
 const INTERESTS = [
   { value: "Comprar casa mobiliada", label: "Comprar casa mobiliada (R$ 550 mil)" },
@@ -33,7 +33,7 @@ const INTERESTS = [
   { value: "Investimento", label: "Investir no empreendimento" },
 ];
 
-// Formata telefone BR enquanto o usuário digita: (79) 98114-4487
+// Formata telefone BR enquanto o usuário digita: (79) 9811-4487
 function formatPhoneBR(raw: string) {
   const d = raw.replace(/\D/g, "").slice(0, 11);
   if (d.length <= 2) return d.length ? `(${d}` : "";
@@ -251,7 +251,7 @@ export function ContactForm() {
                     type="tel"
                     inputMode="numeric"
                     autoComplete="tel-national"
-                    placeholder="(79) 98114-4487"
+                    placeholder="(79) 9811-4487"
                     value={phone}
                     onChange={(e) => setPhone(formatPhoneBR(e.target.value))}
                     className="w-full rounded-xl border border-offwhite/15 bg-offwhite/5 px-4 py-3 text-base text-offwhite outline-none transition-colors focus:border-gold"
