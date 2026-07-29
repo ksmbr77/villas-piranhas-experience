@@ -19,6 +19,8 @@ export function Hero() {
           style={{ objectPosition: "center 30%", transform: "scale(1.08)", transformOrigin: "center top" }}
           width={1920}
           height={1280}
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-forest-deep/75 via-forest-deep/45 to-forest-deep/90" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,oklch(0.15_0.02_155/0.6)_100%)]" />
