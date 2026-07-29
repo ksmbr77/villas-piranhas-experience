@@ -1,24 +1,64 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { Differentiators } from "@/components/site/Differentiators";
+import { Houses } from "@/components/site/Houses";
+import { Rental } from "@/components/site/Rental";
+import { Lots } from "@/components/site/Lots";
+import { Amenities } from "@/components/site/Amenities";
+import { VideoSection } from "@/components/site/VideoSection";
+import { Gallery } from "@/components/site/Gallery";
+import { Location } from "@/components/site/Location";
+import { Testimonials } from "@/components/site/Testimonials";
+import { FAQ } from "@/components/site/FAQ";
+import { ContactForm } from "@/components/site/ContactForm";
+import { FinalCTA } from "@/components/site/FinalCTA";
+import { Footer } from "@/components/site/Footer";
+import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Casas Villages Piranhas · Condomínio de alto padrão em Piranhas/AL" },
+      {
+        name: "description",
+        content:
+          "Villages Piranhas: casas e lotes de alto padrão em condomínio fechado, com segurança 24h, natureza preservada e infraestrutura completa de lazer.",
+      },
+      { property: "og:title", content: "Casas Villages Piranhas · Viver bem em cada detalhe" },
+      {
+        property: "og:description",
+        content:
+          "Condomínio residencial exclusivo em Piranhas. Casas, lotes e aluguel com padrão internacional.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      <Navbar />
+      <main>
+        <Hero />
+        <Differentiators />
+        <Houses />
+        <Rental />
+        <Lots />
+        <Amenities />
+        <VideoSection />
+        <Gallery />
+        <Location />
+        <Testimonials />
+        <FAQ />
+        <ContactForm />
+        <FinalCTA />
+      </main>
+      <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
