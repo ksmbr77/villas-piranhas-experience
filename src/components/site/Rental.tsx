@@ -10,7 +10,7 @@ export function Rental() {
         <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-20">
           <div data-reveal className="relative">
             <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-elev)]">
-              <img
+              <img decoding="async"
                 src={rental.url}
                 alt="Casa para aluguel de temporada no Villages Piranhas com piscina privativa"
                 loading="lazy"
