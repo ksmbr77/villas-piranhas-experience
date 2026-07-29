@@ -29,8 +29,11 @@ export function Footer() {
           <div className="eyebrow mb-4">Contato</div>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-forest" /> Piranhas · Sergipe</li>
-            <li className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-forest" /> WhatsApp comercial</li>
-            <li className="flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-forest" /> contato@villagespiranhas.com</li>
+            <li>
+              <a href="https://wa.me/5579981144487" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 story-underline">
+                <Phone className="h-3.5 w-3.5 text-forest" /> +55 79 9811-4487
+              </a>
+            </li>
             <li>
               <a href="https://www.instagram.com/casavillagespiranhas/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 story-underline">
                 <Instagram className="h-3.5 w-3.5 text-forest" /> @casavillagespiranhas
