@@ -37,7 +37,7 @@ export function Navbar() {
           }`}
         >
           <span className="font-display text-lg tracking-tight">
-            Villages<span className="text-gold"> · </span>Piranha
+            Villages<span className="text-gold"> · </span>Piranhas
           </span>
         </a>
 
@@ -57,7 +57,7 @@ export function Navbar() {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5579999999999"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-forest px-5 py-2.5 text-[13px] font-medium text-offwhite transition-all hover:bg-forest-deep hover:shadow-[var(--shadow-elev)]"
@@ -79,7 +79,7 @@ export function Navbar() {
       {open && (
         <div className="fixed inset-0 z-50 bg-forest-deep text-offwhite animate-float-in lg:hidden">
           <div className="flex items-center justify-between px-6 py-5">
-            <span className="font-display text-lg">Villages · Piranha</span>
+            <span className="font-display text-lg">Villages · Piranhas</span>
             <button onClick={() => setOpen(false)} aria-label="Fechar">
               <X className="h-6 w-6" />
             </button>
@@ -96,7 +96,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5579999999999"
               className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-medium text-forest-deep"
             >
               <MessageCircle className="h-4 w-4" /> Agendar visita

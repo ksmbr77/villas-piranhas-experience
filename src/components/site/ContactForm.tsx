@@ -11,7 +11,7 @@ const schema = z.object({
   message: z.string().trim().max(1000).optional(),
 });
 
-const WHATSAPP = "5500000000000";
+const WHATSAPP = "5579999999999";
 
 export function ContactForm() {
   const ref = useReveal<HTMLElement>();
