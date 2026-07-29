@@ -1,4 +1,4 @@
-import { School, ShoppingBasket, Cross, Hospital, Building2, Route } from "lucide-react";
+import { School, ShoppingBasket, Cross, Hospital, Building2, Route, ExternalLink } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 
 const points = [
