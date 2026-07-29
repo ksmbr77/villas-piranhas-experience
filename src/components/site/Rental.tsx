@@ -77,7 +77,7 @@ export function Rental() {
 
             <div data-reveal className="mt-8 flex flex-wrap items-center gap-4">
               <a
-                href="https://wa.me/5579981144487?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20alugar%20uma%20casa%20no%20Villages%20Piranhas%20(SE)."
+                href="https://wa.me/5579998114487?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20alugar%20uma%20casa%20no%20Villages%20Piranhas%20(SE)."
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-sm font-medium text-offwhite transition-all hover:bg-forest-deep hover:shadow-[var(--shadow-elev)]"

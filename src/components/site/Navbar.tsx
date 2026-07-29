@@ -57,7 +57,7 @@ export function Navbar() {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="https://wa.me/5579981144487"
+            href="https://wa.me/5579998114487"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-forest px-5 py-2.5 text-[13px] font-medium text-offwhite transition-all hover:bg-forest-deep hover:shadow-[var(--shadow-elev)]"
@@ -96,7 +96,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/5579981144487"
+              href="https://wa.me/5579998114487"
               className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-medium text-forest-deep"
             >
               <MessageCircle className="h-4 w-4" /> Agendar visita

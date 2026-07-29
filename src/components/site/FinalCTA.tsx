@@ -31,7 +31,7 @@ export function FinalCTA() {
             Agendar visita
           </a>
           <a
-            href="https://wa.me/5579981144487"
+            href="https://wa.me/5579998114487"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-offwhite/40 px-8 py-4 text-sm font-medium text-offwhite transition-colors hover:bg-offwhite/10"
