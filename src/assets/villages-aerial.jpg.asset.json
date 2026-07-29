@@ -2,10 +2,10 @@
   "version": 1,
   "asset_id": "d67a86f8-b4c9-4acc-be22-6cbe53799c07",
   "project_id": "ff054bb5-da00-41c2-8f5b-7861ca47a5c5",
-  "url": "/images/villages-aerial.jpg",
+  "url": "/images/villages-aerial.webp",
   "r2_key": "a/v1/ff054bb5-da00-41c2-8f5b-7861ca47a5c5/d67a86f8-b4c9-4acc-be22-6cbe53799c07/villages-aerial.jpg",
-  "original_filename": "villages-aerial.jpg",
+  "original_filename": "villages-aerial.webp",
   "size": 186541,
-  "content_type": "image/jpeg",
+  "content_type": "image/webp",
   "created_at": "2026-07-29T14:47:28Z"
 }
