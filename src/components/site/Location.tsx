@@ -51,12 +51,15 @@ export function Location() {
           <div data-reveal className="relative overflow-hidden rounded-3xl border border-border shadow-[var(--shadow-soft)]">
             <iframe
               title="Localização Villages Piranhas em Piranhas, Sergipe"
-              src="https://www.google.com/maps?q=Piranhas,+Sergipe,+Brasil&output=embed"
+              src="https://maps.google.com/maps?q=Piranhas%2C%20Sergipe%2C%20Brasil&t=&z=13&ie=UTF8&iwloc=&output=embed"
               className="h-[520px] w-full grayscale-[35%] contrast-[0.95]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              style={{ border: 0 }}
             />
           </div>
+
         </div>
       </div>
     </section>
