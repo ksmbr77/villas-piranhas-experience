@@ -16,6 +16,7 @@ export function Hero() {
           src={heroImg.url}
           alt="Vista aérea do condomínio Villages Piranhas em Piranhas, Sergipe"
           className="h-full w-full object-cover"
+          style={{ objectPosition: "center 30%", transform: "scale(1.08)", transformOrigin: "center top" }}
           width={1920}
           height={1280}
         />
