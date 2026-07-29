@@ -56,7 +56,7 @@ export function Hero() {
               <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a
-              href="https://wa.me/5579999999999"
+              href="https://wa.me/5579981144487"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-offwhite/40 px-7 py-4 text-sm font-medium text-offwhite backdrop-blur-sm transition-all hover:border-offwhite hover:bg-offwhite/10"

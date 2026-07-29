@@ -106,7 +106,7 @@ export function Houses() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="https://wa.me/5579999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20comprar%20uma%20casa%20mobiliada%20no%20Villages%20Piranhas."
+                href="https://wa.me/5579981144487?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20comprar%20uma%20casa%20mobiliada%20no%20Villages%20Piranhas."
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-sm font-medium text-offwhite transition-all hover:bg-forest-deep hover:shadow-[var(--shadow-elev)]"
