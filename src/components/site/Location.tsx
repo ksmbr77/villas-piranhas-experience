@@ -27,8 +27,9 @@ export function Location() {
               <span className="italic text-forest">A natureza aqui.</span>
             </h2>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Localizado em Piranhas, o Villages combina a serenidade da natureza
-              com a conveniência de estar a poucos minutos dos principais serviços.
+              O Villages Piranhas fica em Piranhas, no sertão de Sergipe, combinando
+              a serenidade do interior com a conveniência de estar a poucos minutos
+              dos principais serviços da cidade.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3">
@@ -49,8 +50,8 @@ export function Location() {
 
           <div data-reveal className="relative overflow-hidden rounded-3xl border border-border shadow-[var(--shadow-soft)]">
             <iframe
-              title="Localização Casas Villages Piranhas"
-              src="https://www.google.com/maps?q=Piranhas,+Alagoas,+Brasil&output=embed"
+              title="Localização Villages Piranhas em Piranhas, Sergipe"
+              src="https://www.google.com/maps?q=Piranhas,+Sergipe,+Brasil&output=embed"
               className="h-[520px] w-full grayscale-[35%] contrast-[0.95]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

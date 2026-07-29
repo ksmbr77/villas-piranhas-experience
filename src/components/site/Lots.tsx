@@ -1,11 +1,11 @@
 import { MapPinned, Landmark, CircleDollarSign } from "lucide-react";
-import lotImg from "@/assets/lot.jpg";
+import lotImg from "@/assets/villages-aerial.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const lots = [
-  { code: "L-04", area: "420 m²", price: "R$ 189.000", status: "Disponível", finance: "Até 60x" },
-  { code: "L-11", area: "540 m²", price: "R$ 245.000", status: "Disponível", finance: "Até 60x" },
-  { code: "L-18", area: "680 m²", price: "R$ 312.000", status: "Últimas unidades", finance: "Até 72x" },
+  { code: "L-04", area: "200 m²", price: "R$ 70.000", status: "Disponível", finance: "Até 60x" },
+  { code: "L-11", area: "260 m²", price: "R$ 92.000", status: "Disponível", finance: "Até 60x" },
+  { code: "L-18", area: "320 m²", price: "R$ 118.000", status: "Últimas unidades", finance: "Até 72x" },
 ];
 
 export function Lots() {
@@ -16,12 +16,17 @@ export function Lots() {
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <div data-reveal className="relative">
             <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-elev)]">
-              <img src={lotImg} alt="Vista aérea dos lotes disponíveis" loading="lazy" className="h-full w-full object-cover" />
+              <img
+                src={lotImg.url}
+                alt="Vista aérea dos lotes disponíveis no Villages Piranhas"
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-8 -right-4 glass max-w-[240px] rounded-2xl p-6 shadow-[var(--shadow-soft)] hidden md:block">
-              <div className="eyebrow">Novo módulo</div>
-              <p className="mt-3 font-display text-2xl text-graphite">Fase II lançada</p>
-              <p className="mt-1 text-xs text-muted-foreground">Condições especiais de pré-lançamento.</p>
+              <div className="eyebrow">Lotes</div>
+              <p className="mt-3 font-display text-2xl text-graphite">A partir de R$ 70 mil</p>
+              <p className="mt-1 text-xs text-muted-foreground">Condições especiais e parcelamento facilitado.</p>
             </div>
           </div>
 
@@ -37,8 +42,9 @@ export function Lots() {
                 <span className="italic text-forest">à sua medida</span>.
               </h2>
               <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
-                Terrenos com metragens generosas, infraestrutura completa e condições de
-                financiamento facilitadas. Um investimento sólido e um lar sob medida.
+                Terrenos dentro do condomínio fechado, com infraestrutura completa,
+                segurança e ruas pavimentadas. Um investimento sólido em Piranhas/SE,
+                a partir de <strong className="text-graphite">R$ 70 mil</strong>.
               </p>
             </div>
 
@@ -70,7 +76,9 @@ export function Lots() {
                   <div className="flex items-center gap-4">
                     <span className="font-display text-lg text-forest">{lot.price}</span>
                     <a
-                      href="#contato"
+                      href="https://wa.me/5579999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20lote%20do%20Villages%20Piranhas."
+                      target="_blank"
+                      rel="noreferrer"
                       className="rounded-full bg-graphite px-4 py-2 text-[11px] font-medium tracking-wide text-offwhite transition-colors hover:bg-forest"
                     >
                       Tenho interesse

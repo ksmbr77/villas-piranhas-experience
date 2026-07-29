@@ -1,43 +1,15 @@
-import { BedDouble, Bath, Car, Ruler, ArrowRight } from "lucide-react";
-import h1 from "@/assets/house-1.jpg";
-import h2 from "@/assets/house-2.jpg";
-import h3 from "@/assets/house-3.jpg";
+import { BedDouble, Bath, Car, Ruler, ArrowRight, Sofa, CheckCircle2 } from "lucide-react";
+import house from "@/assets/villages-house.jpg.asset.json";
+import entrance from "@/assets/villages-entrance.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
-const houses = [
-  {
-    img: h1,
-    name: "Villa Ipê",
-    price: "R$ 1.480.000",
-    area: "260 m²",
-    lot: "600 m²",
-    beds: 4,
-    suites: 3,
-    garage: 3,
-    desc: "Arquitetura contemporânea com pé-direito duplo, piscina privativa e integração total com o jardim.",
-  },
-  {
-    img: h2,
-    name: "Villa Aurora",
-    price: "R$ 1.190.000",
-    area: "220 m²",
-    lot: "500 m²",
-    beds: 3,
-    suites: 2,
-    garage: 2,
-    desc: "Fachada em pedra natural, espaço gourmet integrado e vista privilegiada para a mata preservada.",
-  },
-  {
-    img: h3,
-    name: "Villa Cedro",
-    price: "R$ 890.000",
-    area: "180 m²",
-    lot: "420 m²",
-    beds: 3,
-    suites: 1,
-    garage: 2,
-    desc: "Estilo rústico refinado, aconchego familiar e amplo living com vista para o pátio interno.",
-  },
+const features = [
+  "Totalmente mobiliada e decorada",
+  "Piscina privativa com cascata",
+  "Fachada em pedra natural e revestimento premium",
+  "Área gourmet integrada ao living",
+  "Cozinha planejada com eletrodomésticos",
+  "Ar-condicionado em todos os ambientes",
 ];
 
 export function Houses() {
@@ -49,78 +21,106 @@ export function Houses() {
           <div data-reveal className="max-w-2xl">
             <div className="mb-6 flex items-center gap-4">
               <span className="h-px w-10 bg-gold" />
-              <span className="eyebrow">Casas disponíveis</span>
+              <span className="eyebrow">Casas à venda</span>
             </div>
             <h2 className="display-lg text-graphite">
-              Residências únicas.
+              Casas mobiliadas.
               <br />
-              <span className="italic text-forest">Padrão único.</span>
+              <span className="italic text-forest">Prontas para morar.</span>
             </h2>
           </div>
           <p data-reveal className="max-w-md text-sm leading-relaxed text-muted-foreground">
-            Casas prontas para morar, com acabamentos de alto padrão e projetos
-            arquitetônicos exclusivos. Escolha a que melhor traduz o seu novo capítulo.
+            Residências de alto padrão totalmente mobiliadas, com projeto arquitetônico
+            contemporâneo e acabamentos premium. Chegue com a mala — o resto está pronto.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {houses.map((h, i) => (
-            <article
-              key={h.name}
-              data-reveal
-              style={{ transitionDelay: `${i * 100}ms` }}
-              className="group overflow-hidden rounded-2xl bg-card shadow-[var(--shadow-soft)] lift"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                <img
-                  src={h.img}
-                  alt={h.name}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
-                />
-                <div className="absolute right-4 top-4 rounded-full bg-background/90 px-3 py-1.5 text-[11px] font-medium tracking-wide text-forest backdrop-blur">
-                  Pronta para morar
-                </div>
-              </div>
-              <div className="p-7">
-                <div className="flex items-baseline justify-between gap-4">
-                  <h3 className="font-display text-2xl text-graphite">{h.name}</h3>
-                  <span className="font-display text-lg text-forest">{h.price}</span>
-                </div>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{h.desc}</p>
+        <div className="mt-16 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+          <div data-reveal className="relative">
+            <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-elev)]">
+              <img
+                src={house.url}
+                alt="Casa mobiliada à venda no Villages Piranhas com piscina privativa"
+                loading="lazy"
+                className="aspect-[4/3] h-full w-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-4 hidden overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] md:block">
+              <img
+                src={entrance.url}
+                alt="Portaria do Villages Piranhas"
+                loading="lazy"
+                className="h-40 w-56 object-cover"
+              />
+            </div>
+          </div>
 
-                <dl className="mt-6 grid grid-cols-4 gap-2 border-y border-border py-4 text-center text-[11px] text-muted-foreground">
-                  <div>
-                    <Ruler className="mx-auto mb-1 h-4 w-4 text-forest" strokeWidth={1.4} />
-                    <dd className="font-medium text-graphite">{h.area}</dd>
-                    <dt>Construído</dt>
-                  </div>
-                  <div>
-                    <BedDouble className="mx-auto mb-1 h-4 w-4 text-forest" strokeWidth={1.4} />
-                    <dd className="font-medium text-graphite">{h.beds}</dd>
-                    <dt>Quartos</dt>
-                  </div>
-                  <div>
-                    <Bath className="mx-auto mb-1 h-4 w-4 text-forest" strokeWidth={1.4} />
-                    <dd className="font-medium text-graphite">{h.suites}</dd>
-                    <dt>Suítes</dt>
-                  </div>
-                  <div>
-                    <Car className="mx-auto mb-1 h-4 w-4 text-forest" strokeWidth={1.4} />
-                    <dd className="font-medium text-graphite">{h.garage}</dd>
-                    <dt>Vagas</dt>
-                  </div>
-                </dl>
+          <article data-reveal className="rounded-3xl bg-card p-8 shadow-[var(--shadow-soft)] lg:p-10">
+            <div className="inline-flex items-center gap-2 rounded-full bg-forest/10 px-3 py-1.5 text-[11px] font-medium uppercase tracking-wider text-forest">
+              <Sofa className="h-3.5 w-3.5" /> Entrega mobiliada
+            </div>
+            <h3 className="mt-5 font-display text-3xl text-graphite lg:text-4xl">
+              Casa Villages · Modelo padrão
+            </h3>
+            <div className="mt-4 flex items-baseline gap-3">
+              <span className="font-display text-4xl text-forest">R$ 550.000</span>
+              <span className="text-sm text-muted-foreground">mobiliada</span>
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Arquitetura contemporânea com dois pavimentos, fachada em pedra e revestimento
+              natural, piscina privativa e área gourmet. Ambientes integrados e iluminação
+              natural em cada espaço.
+            </p>
 
-                <a
-                  href="#contato"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-forest story-underline"
-                >
-                  Quero conhecer <ArrowRight className="h-4 w-4" />
-                </a>
+            <dl className="mt-6 grid grid-cols-4 gap-2 border-y border-border py-5 text-center text-[11px] text-muted-foreground">
+              <div>
+                <Ruler className="mx-auto mb-1 h-4 w-4 text-forest" strokeWidth={1.4} />
+                <dd className="font-medium text-graphite">140 m²</dd>
+                <dt>Construído</dt>
               </div>
-            </article>
-          ))}
+              <div>
+                <BedDouble className="mx-auto mb-1 h-4 w-4 text-forest" strokeWidth={1.4} />
+                <dd className="font-medium text-graphite">3</dd>
+                <dt>Quartos</dt>
+              </div>
+              <div>
+                <Bath className="mx-auto mb-1 h-4 w-4 text-forest" strokeWidth={1.4} />
+                <dd className="font-medium text-graphite">2</dd>
+                <dt>Suítes</dt>
+              </div>
+              <div>
+                <Car className="mx-auto mb-1 h-4 w-4 text-forest" strokeWidth={1.4} />
+                <dd className="font-medium text-graphite">2</dd>
+                <dt>Vagas</dt>
+              </div>
+            </dl>
+
+            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+              {features.map((f) => (
+                <li key={f} className="flex items-start gap-2 text-sm text-graphite/85">
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-forest" strokeWidth={1.5} />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="https://wa.me/5579999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20comprar%20uma%20casa%20mobiliada%20no%20Villages%20Piranhas."
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-sm font-medium text-offwhite transition-all hover:bg-forest-deep hover:shadow-[var(--shadow-elev)]"
+              >
+                Quero conhecer <ArrowRight className="h-4 w-4" />
+              </a>
+              <a
+                href="#contato"
+                className="inline-flex items-center gap-2 rounded-full border border-graphite/20 px-6 py-3 text-sm font-medium text-graphite transition-colors hover:border-forest hover:text-forest"
+              >
+                Simular financiamento
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
