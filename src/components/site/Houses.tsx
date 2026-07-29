@@ -38,7 +38,7 @@ export function Houses() {
         <div className="mt-16 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
           <div data-reveal className="relative">
             <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-elev)]">
-              <img
+              <img decoding="async"
                 src={house.url}
                 alt="Casa mobiliada à venda no Villages Piranhas com piscina privativa"
                 loading="lazy"
@@ -46,7 +46,7 @@ export function Houses() {
               />
             </div>
             <div className="absolute -bottom-6 -left-4 hidden overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] md:block">
-              <img
+              <img decoding="async"
                 src={entrance.url}
                 alt="Portaria do Villages Piranhas"
                 loading="lazy"

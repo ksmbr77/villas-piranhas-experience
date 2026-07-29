@@ -16,7 +16,7 @@ export function Lots() {
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <div data-reveal className="relative">
             <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-elev)]">
-              <img
+              <img decoding="async"
                 src={lotImg.url}
                 alt="Vista aérea dos lotes disponíveis no Villages Piranhas"
                 loading="lazy"

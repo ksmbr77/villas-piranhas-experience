@@ -37,7 +37,7 @@ export function Gallery() {
               style={{ transitionDelay: `${i * 70}ms` }}
               className={`group overflow-hidden rounded-2xl ${img.h ?? ""}`}
             >
-              <img
+              <img decoding="async"
                 src={img.src}
                 alt={img.alt}
                 loading="lazy"

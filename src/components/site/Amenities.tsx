@@ -28,7 +28,7 @@ export function Amenities() {
   const ref = useReveal<HTMLElement>();
   return (
     <section id="lazer" ref={ref} className="relative overflow-hidden bg-forest-deep py-24 text-offwhite lg:py-36">
-      <img
+      <img decoding="async" loading="lazy"
         src={aerial.url}
         alt=""
         aria-hidden

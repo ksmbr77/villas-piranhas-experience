@@ -42,6 +42,9 @@ export const Route = createFileRoute("/")({
       { name: "twitter:title", content: "Villages Piranhas · História, charme e exclusividade" },
       { name: "twitter:description", content: "Condomínio fechado em Piranhas/SE. Casas mobiliadas, lotes e aluguel de temporada." },
     ],
+    links: [
+      { rel: "preload", as: "image", href: "/images/villages-aerial.webp", fetchpriority: "high" } as any,
+    ],
   }),
   component: Index,
 });
