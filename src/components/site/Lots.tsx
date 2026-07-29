@@ -76,7 +76,7 @@ export function Lots() {
                   <div className="flex items-center gap-4">
                     <span className="font-display text-lg text-forest">{lot.price}</span>
                     <a
-                      href="https://wa.me/5579981144487?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20lote%20do%20Villages%20Piranhas."
+                      href="https://wa.me/5579998114487?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20lote%20do%20Villages%20Piranhas."
                       target="_blank"
                       rel="noreferrer"
                       className="rounded-full bg-graphite px-4 py-2 text-[11px] font-medium tracking-wide text-offwhite transition-colors hover:bg-forest"

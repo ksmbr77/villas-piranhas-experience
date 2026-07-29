@@ -30,8 +30,8 @@ export function Footer() {
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-forest" /> Piranhas · Sergipe</li>
             <li>
-              <a href="https://wa.me/5579981144487" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 story-underline">
-                <Phone className="h-3.5 w-3.5 text-forest" /> 79 9811-4487
+              <a href="https://wa.me/5579998114487" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 story-underline">
+                <Phone className="h-3.5 w-3.5 text-forest" /> 79 99811-4487
               </a>
             </li>
             <li>
