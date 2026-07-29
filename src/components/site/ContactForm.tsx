@@ -23,8 +23,7 @@ const schema = z.object({
 });
 
 const WHATSAPP = "5579981144487";
-const WHATSAPP_DISPLAY = "79 9811</parameter>
-<parameter name="file_path">src/components/site/Footer.tsx
+const WHATSAPP_DISPLAY = "79 9811-4487";
 
 const INTERESTS = [
   { value: "Comprar casa mobiliada", label: "Comprar casa mobiliada (R$ 550 mil)" },
