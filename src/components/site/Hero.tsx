@@ -1,50 +1,49 @@
 import { ArrowDown, MessageCircle, Shield, TreePine, Home, MapPin } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/villages-aerial.jpg.asset.json";
 
 const indicators = [
   { icon: Shield, label: "Segurança 24h" },
-  { icon: TreePine, label: "Natureza preservada" },
-  { icon: Home, label: "Casas e lotes disponíveis" },
-  { icon: MapPin, label: "Condomínio fechado" },
+  { icon: TreePine, label: "Infraestrutura completa" },
+  { icon: Home, label: "Casas mobiliadas e lotes" },
+  { icon: MapPin, label: "Piranhas · Sergipe" },
 ];
 
 export function Hero() {
   return (
     <section id="top" className="relative min-h-screen w-full overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <img
-          src={heroImg}
-          alt="Vista aérea do condomínio Casas Villages Piranha ao entardecer"
+          src={heroImg.url}
+          alt="Vista aérea do condomínio Villages Piranhas em Piranhas, Sergipe"
           className="h-full w-full object-cover"
           width={1920}
           height={1280}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-forest-deep/70 via-forest-deep/40 to-forest-deep/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-forest-deep/75 via-forest-deep/45 to-forest-deep/90" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,oklch(0.15_0.02_155/0.6)_100%)]" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-between px-6 pb-14 pt-36 lg:px-10 lg:pt-40">
         <div className="max-w-4xl animate-float-in">
           <div className="mb-8 flex items-center gap-4">
             <span className="h-px w-12 bg-gold" />
-            <span className="eyebrow-light">Casas Villages · Piranhas</span>
+            <span className="eyebrow-light">Villages Piranhas · Sergipe</span>
           </div>
 
           <h1 className="display-xl text-offwhite">
-            Viva onde conforto,
+            História, charme
             <br />
-            natureza e{" "}
+            e{" "}
             <span className="italic text-gold-soft">exclusividade</span>
             <br />
-            se encontram.
+            em Piranhas/SE.
           </h1>
 
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-offwhite/80">
-            Um condomínio residencial de alto padrão, projetado para famílias que
-            buscam segurança, valorização patrimonial e qualidade de vida em meio
-            à natureza preservada.
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-offwhite/85">
+            Condomínio fechado de alto padrão no coração do sertão sergipano.
+            Casas mobiliadas a partir de <strong className="text-offwhite">R$ 550 mil</strong>,
+            lotes a partir de <strong className="text-offwhite">R$ 70 mil</strong> e
+            aluguel de temporada a partir de <strong className="text-offwhite">R$ 800/diária</strong>.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -56,7 +55,7 @@ export function Hero() {
               <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5579999999999"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-offwhite/40 px-7 py-4 text-sm font-medium text-offwhite backdrop-blur-sm transition-all hover:border-offwhite hover:bg-offwhite/10"
@@ -67,7 +66,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Indicators */}
         <div className="mt-16">
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-offwhite/15 md:grid-cols-4">
             {indicators.map((it) => (

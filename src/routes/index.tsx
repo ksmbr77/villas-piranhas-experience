@@ -19,20 +19,21 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Casas Villages Piranhas · Condomínio de alto padrão em Piranhas/AL" },
+      { title: "Villages Piranhas · Condomínio de alto padrão em Piranhas/SE" },
       {
         name: "description",
         content:
-          "Villages Piranhas: casas e lotes de alto padrão em condomínio fechado, com segurança 24h, natureza preservada e infraestrutura completa de lazer.",
+          "Villages Piranhas (Piranhas/SE): casas mobiliadas a partir de R$ 550 mil, lotes a partir de R$ 70 mil e aluguel de temporada a partir de R$ 800/diária em condomínio fechado com segurança 24h.",
       },
-      { property: "og:title", content: "Casas Villages Piranhas · Viver bem em cada detalhe" },
+      { property: "og:title", content: "Villages Piranhas · História, charme e exclusividade" },
       {
         property: "og:description",
         content:
-          "Condomínio residencial exclusivo em Piranhas. Casas, lotes e aluguel com padrão internacional.",
+          "Condomínio fechado em Piranhas/SE. Casas mobiliadas, lotes e aluguel de temporada com infraestrutura de alto padrão.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: "https://lovable.app/__l5e/assets-v1/villages-og.jpg" },
     ],
   }),
   component: Index,

@@ -1,18 +1,15 @@
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import h1 from "@/assets/house-1.jpg";
-import pool from "@/assets/amenity-pool.jpg";
-import nature from "@/assets/amenity-nature.jpg";
+import entrance from "@/assets/villages-entrance.jpg.asset.json";
+import house from "@/assets/villages-house.jpg.asset.json";
+import aerial from "@/assets/villages-aerial.jpg.asset.json";
 import { useReveal } from "@/hooks/use-reveal";
 
 const images = [
-  { src: g2, alt: "Vista aérea", h: "row-span-2" },
-  { src: h1, alt: "Casa moderna" },
-  { src: g1, alt: "Portaria" },
-  { src: nature, alt: "Mata preservada", h: "row-span-2" },
-  { src: pool, alt: "Piscina" },
-  { src: g3, alt: "Família na alameda" },
+  { src: aerial.url, alt: "Vista aérea do Villages Piranhas", h: "row-span-2" },
+  { src: house.url, alt: "Casa com piscina privativa" },
+  { src: entrance.url, alt: "Portaria Villages Piranhas" },
+  { src: house.url, alt: "Área externa da casa mobiliada", h: "row-span-2" },
+  { src: aerial.url, alt: "Ruas do condomínio" },
+  { src: entrance.url, alt: "Entrada do condomínio" },
 ];
 
 export function Gallery() {
@@ -26,9 +23,9 @@ export function Gallery() {
             <span className="eyebrow">Galeria</span>
           </div>
           <h2 className="display-lg text-graphite">
-            Cada ângulo revela
+            Registros reais do
             <br />
-            <span className="italic text-forest">uma boa razão</span>.
+            <span className="italic text-forest">Villages Piranhas</span>.
           </h2>
         </div>
 
