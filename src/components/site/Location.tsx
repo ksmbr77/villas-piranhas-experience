@@ -1,4 +1,4 @@
-import { School, ShoppingBasket, Cross, Hospital, Building2, Route } from "lucide-react";
+import { School, ShoppingBasket, Cross, Hospital, Building2, Route, ExternalLink } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 
 const points = [
@@ -51,13 +51,20 @@ export function Location() {
           <div data-reveal className="relative overflow-hidden rounded-3xl border border-border shadow-[var(--shadow-soft)]">
             <iframe
               title="Localização Villages Piranhas em Piranhas, Sergipe"
-              src="https://maps.google.com/maps?q=Piranhas%2C%20Sergipe%2C%20Brasil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              className="h-[520px] w-full grayscale-[35%] contrast-[0.95]"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-37.8200%2C-9.7100%2C-37.6800%2C-9.5400&layer=mapnik&marker=-9.6231%2C-37.7561"
+              className="h-[420px] w-full sm:h-[520px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
               style={{ border: 0 }}
             />
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Piranhas%2C+Sergipe%2C+Brasil"
+              target="_blank"
+              rel="noreferrer"
+              className="absolute bottom-4 right-4 inline-flex items-center gap-2 rounded-full bg-forest-deep/90 px-4 py-2 text-xs font-medium text-offwhite backdrop-blur-md transition-colors hover:bg-forest-deep"
+            >
+              Ver no Google Maps <ExternalLink className="h-3 w-3" />
+            </a>
           </div>
 
         </div>
